@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		97CCBFF72DCBB21E0028C2E3 /* MarkdownWebView in Frameworks */ = {isa = PBXBuildFile; productRef = 97CCBFF62DCBB21E0028C2E3 /* MarkdownWebView */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		97CCBFD92DCBB1680028C2E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -35,16 +39,6 @@
 			path = streamStyle;
 			sourceTree = "<group>";
 		};
-		97CCBFDB2DCBB1680028C2E3 /* streamStyleTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = streamStyleTests;
-			sourceTree = "<group>";
-		};
-		97CCBFE52DCBB1680028C2E3 /* streamStyleUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = streamStyleUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97CCBFF72DCBB21E0028C2E3 /* MarkdownWebView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				97CCBFC92DCBB1660028C2E3 /* streamStyle */,
-				97CCBFDB2DCBB1680028C2E3 /* streamStyleTests */,
-				97CCBFE52DCBB1680028C2E3 /* streamStyleUITests */,
 				97CCBFC82DCBB1660028C2E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +105,7 @@
 			);
 			name = streamStyle;
 			packageProductDependencies = (
+				97CCBFF62DCBB21E0028C2E3 /* MarkdownWebView */,
 			);
 			productName = streamStyle;
 			productReference = 97CCBFC72DCBB1660028C2E3 /* streamStyle.app */;
@@ -129,9 +123,6 @@
 			);
 			dependencies = (
 				97CCBFDA2DCBB1680028C2E3 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				97CCBFDB2DCBB1680028C2E3 /* streamStyleTests */,
 			);
 			name = streamStyleTests;
 			packageProductDependencies = (
@@ -152,9 +143,6 @@
 			);
 			dependencies = (
 				97CCBFE42DCBB1680028C2E3 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				97CCBFE52DCBB1680028C2E3 /* streamStyleUITests */,
 			);
 			name = streamStyleUITests;
 			packageProductDependencies = (
@@ -195,6 +183,9 @@
 			);
 			mainGroup = 97CCBFBE2DCBB1660028C2E3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				97CCBFF52DCBB21E0028C2E3 /* XCRemoteSwiftPackageReference "markdown-webview" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 97CCBFC82DCBB1660028C2E3 /* Products */;
 			projectDirPath = "";
@@ -414,10 +405,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoyuan.streamStyle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
@@ -453,10 +445,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoyuan.streamStyle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
@@ -591,6 +584,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		97CCBFF52DCBB21E0028C2E3 /* XCRemoteSwiftPackageReference "markdown-webview" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tomdai/markdown-webview";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		97CCBFF62DCBB21E0028C2E3 /* MarkdownWebView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97CCBFF52DCBB21E0028C2E3 /* XCRemoteSwiftPackageReference "markdown-webview" */;
+			productName = MarkdownWebView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 97CCBFBF2DCBB1660028C2E3 /* Project object */;
 }

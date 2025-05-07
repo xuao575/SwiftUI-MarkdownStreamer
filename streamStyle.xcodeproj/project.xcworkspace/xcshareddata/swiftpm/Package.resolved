@@ -1,0 +1,15 @@
+{
+  "originHash" : "50feebee9272917d291c13ebda13b7df2a0d6b1558cb0021797ff005690615df",
+  "pins" : [
+    {
+      "identity" : "markdown-webview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tomdai/markdown-webview",
+      "state" : {
+        "revision" : "a50704f158366705a1fcb0f6d6424b5522cd8b17",
+        "version" : "2.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}
