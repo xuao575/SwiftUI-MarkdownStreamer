@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		97CCBFF72DCBB21E0028C2E3 /* MarkdownWebView in Frameworks */ = {isa = PBXBuildFile; productRef = 97CCBFF62DCBB21E0028C2E3 /* MarkdownWebView */; };
+		97CCC0072DCBB81B0028C2E3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 97CCC0012DCBB81B0028C2E3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		97CCBFC72DCBB1660028C2E3 /* streamStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = streamStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		97CCBFD82DCBB1680028C2E3 /* streamStyleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = streamStyleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		97CCBFE22DCBB1680028C2E3 /* streamStyleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = streamStyleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97CCBFC72DCBB1660028C2E3 /* streamStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = streamStyle.app; path = /Users/aoxu/Desktop/streamStyle/build/Debug/streamStyle.app; sourceTree = "<absolute>"; };
+		97CCBFD82DCBB1680028C2E3 /* streamStyleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = streamStyleTests.xctest; path = /Users/aoxu/Desktop/streamStyle/build/Debug/streamStyle.app/Contents/PlugIns/streamStyleTests.xctest; sourceTree = "<absolute>"; };
+		97CCBFE22DCBB1680028C2E3 /* streamStyleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = streamStyleUITests.xctest; path = "/Users/aoxu/Desktop/streamStyle/build/Debug/streamStyleUITests-Runner.app/Contents/PlugIns/streamStyleUITests.xctest"; sourceTree = "<absolute>"; };
+		97CCC0012DCBB81B0028C2E3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -71,18 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				97CCBFC92DCBB1660028C2E3 /* streamStyle */,
-				97CCBFC82DCBB1660028C2E3 /* Products */,
+				97CCC0012DCBB81B0028C2E3 /* README.md */,
 			);
-			sourceTree = "<group>";
-		};
-		97CCBFC82DCBB1660028C2E3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				97CCBFC72DCBB1660028C2E3 /* streamStyle.app */,
-				97CCBFD82DCBB1680028C2E3 /* streamStyleTests.xctest */,
-				97CCBFE22DCBB1680028C2E3 /* streamStyleUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +179,7 @@
 				97CCBFF52DCBB21E0028C2E3 /* XCRemoteSwiftPackageReference "markdown-webview" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 97CCBFC82DCBB1660028C2E3 /* Products */;
+			productRefGroup = 97CCBFBE2DCBB1660028C2E3;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -203,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97CCC0072DCBB81B0028C2E3 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
